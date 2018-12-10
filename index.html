@@ -7,13 +7,14 @@
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!--Import icons -->
+    <!--Import custom css -->
+    <link type="text/css" rel="stylesheet" href="custom.css">
 </head>
 <body>
-<!-- navbar home icon for later: <i class="material-icons">home</i> -->
+<!--navbar-->
 <div class="navbar-fixed">
-    <nav class="cyan lighten-1">
-        <div class="nav-wrapper container">
+    <nav>
+        <div class="nav-wrapper">
             <a class="brand-logo left" href="#"><i class="material-icons">home</i></a>
             <ul class="right">
                 <li><a href="#"><i class="material-icons left">account_box</i>Member Login</a></li>
@@ -22,41 +23,112 @@
     </nav>
 </div>
 
-
-<div class="container">
+<div class="section">
     <!--Status of ap's,photo/video-->
     <div class="row">
-        <div class="col s12 m4">Status STUFF WILL GO HERE</div>
-        <div class="col s12 m8">Photo/Vid here</div>
-    </div>
+        <div class="col s12 m4">
+            <h4>Network Status</h4>
+            <div class="collection">
+                <a href="#!" class="collection-item">Mountain: Speed super fast</a>
+                <a href="#!" class="collection-item">billy goat: broken horn</a>
+                <a href="#!" class="collection-item">AP3</a>
+                <a href="#!" class="collection-item">AP4</a>
 
-    <!-- sections for nav/sections/ -->
-    <div class="section">
+            </div>
+        </div>
+        <div class="col s12 m8">
+            <div class="parallax-container valign-wrapper">
+                <img src="img.jpg" style="padding: 25px">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- MRIC promotion area-->
+<div class="container">
+    <div class="section  blue-grey lighten-3 center-align">
         <div class="row">
+            <div class="col s6 m4">
+                <div class="card-panel teal">
+                    <span class="white-text">
+                        <i class='medium material-icons'>satellite</i>
+
+                        <h4>Location</h4>
+                        <p>
+                        MRIC covers ***....**** , bringing internet to hard to reach locations</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="col s6 m4">
+                <div class="card-panel teal">
+                    <span class="white-text">
+                        <i class='medium material-icons'>network_check</i>
+                        <h4>Speed</h4>
+                        <p>The fastest internet</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="col s6 m4">
+                <div class="card-panel teal">
+                    <span class="white-text">
+                        <i class='medium material-icons'>check_box</i>
+                        <h4>Reliability</h4>
+                        <p>Improving architechture, investing in faster technologies, reaching</p></span>
+                </div>
+            </div>
+
+            <div class="col s6 m4 offset-m2">
+                <div class="card-panel teal">
+                    <span class="white-text">
+                        <i class='medium material-icons'>attach_money</i>
+                        <h4>Cost</h4>
+                        <p>Competitive pricing with superior performance</p>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="col s6 m4">
+                <div class="card-panel teal">
+                    <span class="white-text">
+                        <i class='medium material-icons'>tag_faces</i>
+                        <h4>Community</h4>
+                        <p>Support local - Organized as a co-op</p>
+                    </span>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!--OLD CODE
             <div class="col s12 m3">
-                <div class="card-stacked z-depth-5">
+                <div class="card-stacked center z-depth-5">
                     <div class="card-action">
                         <h4>About MRIC</h4>
                     </div>
-                    <div class="card-content"><p>Magnolia Road Internet Co-op BLAHAHAHAHHAHAHA</p></div>
+                    <div class="card-content"><p>The Magnolia Road Internet Cooperative (MRIC) provides high speed Internet access to areas west of Boulder, Colorado including Sugarloaf, Magnolia, Coal Creek Canyon, Blue Mountain Estates, Nederland's Ridge Road, and Boulder's Lakeshore neighborhoods.</p></div>
                 </div>
             </div>
 
             <div class="col s12 m3">
-                <div class="card-stacked z-depth-5">
+                <div class="card-stacked center z-depth-5">
                     <div class="card-action">
-                        <a class="btn-floating bottom-fab left" href="#"><i class="material-icons cyan lighten-1">arrow_downward</i></a>
                         <h4>Services</h4>
                     </div>
-                    <div class="card-content"><p>Learn about our coverage, plans and how to join us</p></div>
+                    <div class="card-content"><p>Learn about our coverage including areas covered, cost of membership, and how to join us</p></div>
                 </div>
             </div>
 
 
             <div class="col s12 m3">
-                <div class="card-stacked z-depth-5">
+                <div class="card-stacked center z-depth-5">
                     <div class="card-action">
-                        <a class="btn-floating bottom-fab left" href="#"><i class="material-icons cyan lighten-1">arrow_downward</i></a>
                         <h4>Co-op info</h4>
                     </div>
                 <div class="card-content"><p>Info about the co-op and documents</p></div>
@@ -64,9 +136,8 @@
             </div>
 
             <div class="col s12 m3">
-                <div class="card-stacked z-depth-5">
+                <div class="card-stacked center z-depth-5">
                     <div class="card-action">
-                        <a class="btn-floating bottom-fab left" href="#"><i class="material-icons cyan lighten-1">arrow_downward</i></a>
                         <h4>Contact</h4>
                     </div>
                     <div class="card-content"><p>Contact us for support or general inquiries</p></div>
@@ -76,12 +147,14 @@
             </div>
 
 
-        </div>
+        </div> -->
     </div>
 
 
 </div>
 <!-- Import materialize javascript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+<script type="text/javascript" src="https://materializecss.com/templates/parallax-template/js/init.js"></script>
+
 </body>
 </html>

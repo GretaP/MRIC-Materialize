@@ -1,0 +1,15 @@
+/*
+custom styles to overwrite materialize css:
+-nav bar colors
+ */
+nav {
+    background-color: #e2e6e9;
+}
+
+nav .material-icons {
+    color: #6F8694 !important;
+}
+
+nav ul a {
+    color: #6F8694;
+}
