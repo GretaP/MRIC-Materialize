@@ -13,3 +13,17 @@ nav .material-icons {
 nav ul a {
     color: #6F8694;
 }
+
+/*allow fir fixed sidenav
+ */
+
+
+header, main, footer {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}

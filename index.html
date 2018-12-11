@@ -9,49 +9,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--Import custom css -->
     <link type="text/css" rel="stylesheet" href="custom.css">
+    <!--minified JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>
-<!--navbar-->
-<div class="navbar-fixed">
+
+
+<header>
+    <!--navbar-->
+<div class="navbar-fixed hide-on-large-only">
     <nav>
         <div class="nav-wrapper">
-            <a class="brand-logo left" href="#"><i class="material-icons">home</i></a>
-            <ul class="right">
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <!--<a class="brand-logo left" href="#"><i class="material-icons">home</i></a>-->
+            <ul class="left">
                 <li><a href="#"><i class="material-icons left">account_box</i>Member Login</a></li>
             </ul>
         </div>
     </nav>
 </div>
+<!-- trying something -->
+
+<ul id="slide-out" class="sidenav sidenav-fixed">
+    <!-- may change li to hide-on-med-and-down-->
+    <li class="show-on-large"><a class="waves-effect" href="#"><i class="material-icons waves-effect left">account_box</i>Member Login</a></li>
+    <li class="show-on-large"><div class="divider"></div></li>
+    <li><a class="subheader">Network Status</a></li>
+    <li><a class="waves-effect waves-teal" href="#!">Network Viewer</a></li>
+    <li><a class="waves-effect waves-teal" href="#!">Plans</a></li>
+    <li><a class="waves-effect waves-teal" href="#!">Coop Documentation</a></li>
+    <li><a class="waves-effect waves-teal" href="#!">Service Area</a></li>
+    <li><a class="waves-effect waves-teal" href="#!">Network Viewer</a></li>
+<div class="collapsible-body" style=display: block;">
+    <li>
+        <h4>Network Status</h4>
+        <div class="collection">
+            <a href="#!" class="collection-item">Mountain: Speed super fast</a>
+            <a href="#!" class="collection-item">billy goat: broken horn</a>
+            <a href="#!" class="collection-item">AP3</a>
+            <a href="#!" class="collection-item">AP4</a>
+
+        </div></li>
+</div>
+</ul>
+<!--if changed back to a slide-out side nav, use to initiate:
+<a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a> -->
 
 
-<div class="parallax-container">
-    <div class="parallax"><img src="img/clouds-daylight-glacier.jpg" style="transform: translate3d(-50%, 347.01px, 0px); opacity: 1;">
+
+<div class="parallax-container valign-wrapper">
+    <div class="parallax"><img src="img/resizeGlacierLong.jpg" style="transform: translate3d(-50%, 347.01px, 0px); opacity: 1;">
     </div>
-
     <div class="section">
-        <!--Status of ap's,photo/video-->
         <div class="row">
-            <div class="col s6 m5">
-                <h4>Network Status</h4>
-                <div class="collection">
-                    <a href="#!" class="collection-item">Mountain: Speed super fast</a>
-                    <a href="#!" class="collection-item">billy goat: broken horn</a>
-                    <a href="#!" class="collection-item">AP3</a>
-                    <a href="#!" class="collection-item">AP4</a>
-
-                </div>
-            </div>
-            <div class="col s12 m7 blue">
-                <div class="container">
-                    <h2>hi</h2>
+            <div class="column s6 offset-s3">
+                <div class="card blue-grey lighten-5">
+                    <div class="card-content teal-text center">
+                        <span class="card-title"> Magnolia Road Internet Cooperative</span>
+                        <p>Fostering Community Through Connectivity</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>
+</header>
 
 
+
+    <main>
 <!-- MRIC promotion area-->
 
     <div class="section teal">
@@ -104,10 +130,12 @@
                     </span>
                 </div>
     </div>
-
+    </main>
 <!-- Import materialize javascript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
 <script type="text/javascript" src="https://materializecss.com/templates/parallax-template/js/init.js"></script>
+            <script type="text/javascript" src="custom.js"></script>
+
 
 </body>
 </html>
