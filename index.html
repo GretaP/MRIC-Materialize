@@ -12,15 +12,13 @@
     <!--minified JQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
+
 <body>
-
-
 <header>
-    <!--navbar-->
-<div class="navbar-fixed hide-on-large-only">
+<div class="navbar-fixed">
     <nav>
         <div class="nav-wrapper">
-            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
             <!--<a class="brand-logo left" href="#"><i class="material-icons">home</i></a>-->
             <ul class="left">
                 <li><a href="#"><i class="material-icons left">account_box</i>Member Login</a></li>
@@ -28,34 +26,17 @@
         </div>
     </nav>
 </div>
-<!-- trying something -->
 
-<ul id="slide-out" class="sidenav sidenav-fixed">
+<ul id="slide-out" class="sidenav">
     <!-- may change li to hide-on-med-and-down-->
-    <li class="show-on-large"><a class="waves-effect waves-teal" href="#"><i class="material-icons waves-effect left">account_box</i>Member Login</a></li>
-    <li class="show-on-large"><div class="divider"></div></li>
-    <li><a class="subheader">Network Status</a></li>
-    <li><a class="waves-effect waves-teal" href="#!">Network Viewer</a></li>
-    <li><a class="waves-effect waves-teal" href="#!">Plans</a></li>
+    <li><a href="index.html" class="waves-effect waves-teal"><i class=" material-icons">home</i>Home</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect waves-teal href=#!>">Network Status</a></li>
+    <li><a class="waves-effect waves-teal" href="#!">Join MRIC</a></li> <!-- include info: plans, service area-->
     <li><a class="waves-effect waves-teal" href="#!">Coop Documentation</a></li>
-    <li><a class="waves-effect waves-teal" href="#!">Service Area</a></li>
-    <li><a class="waves-effect waves-teal" href="#!">Network Viewer</a></li>
-<div class="collapsible-body" style=display: block;">
-    <li>
-        <h4>Network Status</h4>
-        <div class="collection">
-            <a href="#!" class="collection-item">Mountain: Speed super fast</a>
-            <a href="#!" class="collection-item">billy goat: broken horn</a>
-            <a href="#!" class="collection-item">AP3</a>
-            <a href="#!" class="collection-item">AP4</a>
-
-        </div></li>
-</div>
+    <li><a class="waves-effect waves-teal" href="#!">Service and Support</a></li>
+    <li><a class="waves-effect waves-teal" href="#!">Contact</a></li>
 </ul>
-<!--if changed back to a slide-out side nav, use to initiate:
-<a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a> -->
-
-
 
 <div class="parallax-container valign-wrapper">
     <div class="parallax"><img src="img/resizeGlacierLong.jpg" style="transform: translate3d(-50%, 347.01px, 0px); opacity: 1;">
@@ -78,11 +59,10 @@
 
 
 <main>
-<!-- MRIC promotion area-->
-
+<!-- MRIC promotion area.-->
     <div class="section teal">
         <div class="row">
-            <div class="col s12 m2 offset-m1">
+            <div class="col s12 m3 l2 offset-l2">
                 <div class="icon-block">
                     <span class="white-text">
                         <h5 class="center"><i class='small material-icons'>satellite</i><br>Location</h5>
@@ -92,51 +72,77 @@
                         <div class="hide-on-small-only">
                             <p class="light">MRIC provides high speed Internet to areas west of Boulder, Colorado.</p>
                         </div>
-                        <p class="center-align"><a src="#" class="btn waves-effect">Service Area</a></p>
-
                     </span>
                 </div>
             </div>
 
-            <div class="col s12 m2">
+
+            <div class="col s12 m3 l2">
                 <div class="icon-block">
                     <span class="white-text">
                         <h5 class="center"><i class='small material-icons'>network_check</i><br>Speed</h5>
-                        <p class="light">The privacy of the mountains doesn't need to mean an inferior internet connection.  MRIC boasts the fastest wireless internet in the mountains.</p>
-                        <p class="center-align"><a src="#" class="btn waves-effect">Link to something</a></p>
+                        <div class="hide-on-med-and-up center-align container">
+                            <p class="light">MRIC boasts the fastest wireless internet in the mountains.</p>
+                        </div>
+                        <div class="hide-on-small-only">
+                            <p class="light">MRIC boasts the fastest wireless internet in the mountains.</p>
+                        </div>
                     </span>
                 </div>
             </div>
 
-            <div class="col s12 m2">
+            <div class="col s12 m3 l2">
                 <div class="icon-block">
                     <span class="white-text">
                         <h5 class="center"><i class='small material-icons'>check_box</i><br>Reliability</h5>
-                        <p class="light">Improving architechture, investing in faster technologies, reaching</p>
-                        <p class="center-align"><a src="#" class="btn waves-effect">Link to Something</a></p>
+                        <div class="hide-on-med-and-up center-align container">
+                            <p class="light">Investment in faster technologies, upgraded hardware, and modern network architecture</p>
+                        </div>
+                        <div class="hide-on-small-only">
+                            <p class="light">Continual investment in faster technologies and modern network architecture</p>
+                        </div>
                     </span>
                 </div>
             </div>
 
-            <div class="col s12 m2">
-                <div class="icon-block">
-                    <span class="white-text">
-                        <h5 class="center"><i class='small material-icons'>attach_money</i><br>Cost</h5>
-                        <p class="light">Competitive pricing with superior performance</p>
-                        <p class="center-align"><a src="#" class="btn waves-effect">Link to something</a></p>
-                    </span>
-                </div>
-            </div>
-
-
-            <div class="col s12 m2">
+            <div class="col s12 m3 l2">
                 <div class="icon-block">
                     <span class="white-text">
                         <h5 class="center"><i class='small material-icons'>tag_faces</i><br>Community</h5>
-                        <p class="center-align"><a src="#" class="btn waves-effect">Link to something</a></p>
-                        <p class="light">Support local - Organized as a co-op</p>
+                        <div class="hide-on-med-and-up center-align container">
+                            <p class="light">Support local - Organized as a co-op, MRIC prioritizes the customer over profit</p>
+                        </div>
+                        <div class="hide-on-small-only">
+                            <p class="light">Support local - Organized as a co-op, MRIC prioritizes the customer over profit</p>
+                        </div>
                     </span>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!--End promotional area, start others -->
+
+    <div class="section blue-grey lighten-4">
+        <div class="row">
+            <div class="column s8 offset-s2">
+                <span class="teal-text">
+                    <h4 class="center">Network Status </h4>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/resizeGlacierLong.jpg" style="transform: translate3d(-50%); opacity: 1;">
+        </div>
+    </div>
+
+    <div class="section teal">
+        <div class="row">
+            <div class="column s8 offset-s2">
+                <span class="white-text">
+                    <h4 class="center">Join MRIC</h4>
+                </span>
             </div>
         </div>
     </div>
@@ -144,13 +150,36 @@
     <div class="section blue-grey lighten-4">
         <div class="row">
             <div class="column s8 offset-s2">
-                <h2 class="center">News and Offers </h2>
+                <span class="teal-text">
+                    <h4 class="center">Coop Documentation</h4>
+                    <ul>
+                        <li>Allen Dove</li>
+                        <li>Allen Gordon</li>
+                        <li>Howard Kaushansky</li>
+                        <li>Mark Woodworth</li>
+                        <li>Nick Wilson</li>
+                        <li>Paul Ganci</li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </div>
 
+    <div class="section teal">
+        <div class="row">
+            <div class="column s8 offset-s2">
+                <span class="white-text">
+                    <h4 class="center">Service and Support</h4>
+                </span>
             </div>
         </div>
     </div>
 
 </main>
+
+<footer>
+
+</footer>
 <!-- Import materialize javascript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
 <script type="text/javascript" src="https://materializecss.com/templates/parallax-template/js/init.js"></script>
