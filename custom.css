@@ -1,3 +1,6 @@
+
+.anchor { padding-top: 90px; }
+
 /*
 custom styles to overwrite materialize css:
 -nav bar colors
@@ -18,3 +21,23 @@ nav ul a {
     color: #6F8694;
     background-color: #e2e6e9;
 }
+
+.tabs .tab a{
+    color: #616161;
+    background-color:#fafafa
+}
+
+.tabs .tab a:hover{
+    background-color:#e0f2f1;
+    color:teal;
+}
+
+.tabs .tab a.active{
+    background-color:#e0f2f1;
+    color:teal;
+}
+
+.tabs .indicator{
+    background-color:teal;
+}
+
