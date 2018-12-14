@@ -1,16 +1,50 @@
 /*.anchor {padding-top: 40px; }*/
 /*to do: tabs*/
 
-/* old color scheme, reminder
+/*!* old color scheme, reminder*/
 
-.tealgrey {*/
-    /*background-color: #eceff1;*/
-    /*color: teal;*/
+/*.rounded {*/
+    /*border-radius: 25px;*/
 /*}*/
 
+.page-footer{
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.page-footer{
+    line-height: 1.2;
+}
 
 
 
+.parallax-container-small {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.parallax-container-small .parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.parallax-container-small .parallax img {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    min-width: 20%;
+    min-height: 20%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
 /* End testing area  */
 
 /*nav classes */
@@ -50,6 +84,16 @@ nav ul a {
 .steelgrey {
     background-color: #eceff1;
     color: #616161;
+}
+
+.tealgrey {
+    background-color: #eceff1;
+    color: teal;
+}
+
+.whiteteal {
+    background-color: #009688;
+    color: white;
 }
 
 .page-footer {

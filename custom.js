@@ -5,8 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // var instances = M.Sidenav.init(elems, options);
 });
 
-
 //Initialize tabs
 $(document).ready(function(){
     $('.tabs').tabs();
 });
+
+
+//
