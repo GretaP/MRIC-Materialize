@@ -3,9 +3,9 @@
 
 /*!* old color scheme, reminder*/
 
-/*.rounded {*/
-    /*border-radius: 25px;*/
-/*}*/
+.rounded {
+    border-radius: 25px;
+}
 
 .page-footer{
     overflow: hidden;
@@ -80,6 +80,7 @@ nav ul a {
 }
 
 
+
 /* colors, various */
 .steelgrey {
     background-color: #eceff1;
@@ -101,20 +102,57 @@ nav ul a {
     background-color: #e2e6e9;
 }
 
+/*cards*/
+
+.card {
+    background-color: #eceff1;
+}
+
+.card .card-content a {
+    color: teal;
+    /*background-color: #c6ecd3;*/
+}
+
+.card .card-content a:hover {
+    background-color: #c6ecd3;
+}
+
 .tabs .tab a{
     color: #616161;
-    background-color:#fafafa
+    background-color:#eceff1;
 }
+
+
+/*old colors*/
+/*.tabs .tab a:focus, .tabs .tab a:focus.active {*/
+    /*background-color: #c6ecd3;*/
+    /*color: teal;*/
+    /*outline: none;*/
+/*}*/
+
+/*.tabs .tab a.active{*/
+/*background-color:#c6ecd3;*/
+/*color:teal;*/
+/*}*/
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: #44c26f;
+    color: white;
+    outline: none;
+}
+
+
+.tabs .tab a.active {
+    background-color: #44c26f;
+    color: white;
+}
+
 
 .tabs .tab a:hover{
-    background-color:#e0f2f1;
-    color:teal;
+    background-color:#44c26f;
+    color:white;
 }
 
-.tabs .tab a.active{
-    background-color:#e0f2f1;
-    color:teal;
-}
 
 .tabs .indicator{
     background-color:teal;
