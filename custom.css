@@ -1,22 +1,11 @@
-/*.anchor {padding-top: 40px; }*/
-/*to do: tabs*/
+/*.nav-pad: :before {padding-top: 56px;*/
+    /*margin-top: -56px;}*/
 
-/*!* old color scheme, reminder*/
+/*.network {padding-top: 1000px;}*/
 
 .rounded {
     border-radius: 25px;
 }
-
-.page-footer{
-    overflow: hidden;
-    padding-top: 10px;
-}
-
-.page-footer{
-    line-height: 1.2;
-}
-
-
 
 .parallax-container-small {
     position: relative;
@@ -47,8 +36,20 @@
 }
 /* End testing area  */
 
-/*nav classes */
 
+
+.page-footer{
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.page-footer{
+    line-height: 1.2;
+}
+
+
+
+/*nav classes */
 .attention .btn {
     background-color: #44c26f;
     color: white;
@@ -79,9 +80,13 @@ nav ul a {
     background-color: white;
 }
 
-
-
 /* colors, various */
+
+/*!*!* old color scheme, reminder*!*/
+/*.lizard {*/
+    /*background-color: #44c26f;*/
+    /*color: white;*/
+/*}*/
 .steelgrey {
     background-color: #eceff1;
     color: #616161;
@@ -122,39 +127,22 @@ nav ul a {
     background-color:#eceff1;
 }
 
-
-/*old colors*/
-/*.tabs .tab a:focus, .tabs .tab a:focus.active {*/
-    /*background-color: #c6ecd3;*/
-    /*color: teal;*/
-    /*outline: none;*/
-/*}*/
-
-/*.tabs .tab a.active{*/
-/*background-color:#c6ecd3;*/
-/*color:teal;*/
-/*}*/
-
 .tabs .tab a:focus, .tabs .tab a:focus.active {
     background-color: #44c26f;
     color: white;
     outline: none;
 }
 
-
 .tabs .tab a.active {
     background-color: #44c26f;
     color: white;
 }
-
 
 .tabs .tab a:hover{
     background-color:#44c26f;
     color:white;
 }
 
-
 .tabs .indicator{
     background-color:teal;
 }
-

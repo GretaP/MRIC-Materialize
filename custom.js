@@ -11,4 +11,13 @@ $(document).ready(function(){
 });
 
 
-//
+// scrollspy.  to add: close sidebar after click, decide if home will be scrolled or a refresh, decide if center is ideal
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.scrollspy');
+//     var instances = M.ScrollSpy.init(elems, options);
+// });
+
+$(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+});

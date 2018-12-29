@@ -4,7 +4,8 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+    <!--<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">-->
+    <link type="text/css" rel="stylesheet" href="materialize.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--Import custom css -->
@@ -32,7 +33,7 @@
 
 <ul id="slide-out" class="sidenav">
     <!-- may change li to hide-on-med-and-down-->
-    <li><a href="index.html" class="waves-effect waves-teal"><i class=" material-icons">landscape</i>Home</a></li>
+    <li><a class="waves-effect waves-teal href="index.html""><i class=" material-icons">landscape</i>Home</a></li>
     <li><div class="divider"></div></li>
     <li><a class="waves-effect waves-teal" href="#network">Network Status</a></li>
     <li><a class="waves-effect waves-teal" href="#join">Join MRIC</a></li> <!-- include info: plans, service area-->
@@ -122,8 +123,7 @@
     </div>
     <!--End promotional area, start others -->
 
-    <div class="section steelgrey">
-        <a class="anchor" name="join"></a>
+    <div id="join" class="section steelgrey scrollspy">
         <div class="container">
             <h4 class="center"><i class="material-icons small">landscape</i> Join MRIC </h4>
             <p class="center">Friendly, Fast, Reliable Internet in the Mountains</p>
@@ -156,14 +156,12 @@
                     <!--</div>-->
 
 
-                        <h5>Where?</h5>
+                        <h5>Coverage</h5>
                         <p>Don't know if your area would be covered?  When in doubt ask us, and click here to see our current service area map</p>
-                        <h5>Cost?</h5>
+                        <h5>Cost</h5>
                         <p>$60/month</p>
                         <p>Setup fees:<ul><li>$50 one time membership fee to join the Co-Op</li>
                         <li>If equipment is needed: $50 installation fee plus the cost of equipment (normally $100-$300)</li></ul></p>
-                        <h5>How?</h5>
-                        <p>Fill out our contact form or give us a call and we'll talk specifics</p>
                 </div>
                 <div class="col s12 m4">
                     <h1>form placeholder</h1>
@@ -178,8 +176,7 @@
     </div>
 
 
-    <div class="section whiteteal">
-        <a class="anchor" name="network"></a>
+    <div id="network" class="section whiteteal scrollspy">
         <h4 class="center">Network Status</h4>
         <div class="container">
             <!--Placeholder-->  <!--Placeholder-->  <!--Placeholder-->
@@ -211,8 +208,7 @@
     </div>
 
     <!--coop information-->
-    <div class="section steelgrey">
-        <a class="anchor" name="coop"></a>
+    <div id="coop" class="section steelgrey scrollspy">
         <div class="container">
             <div class="section">
                         <h4 class="center">Coop Information</h4>
@@ -270,8 +266,7 @@
         </div>
     </div>
 
-    <div class="section whiteteal">
-        <a class="anchor" name="service"></a>
+    <div id="service" class="section whiteteal scrollspy">
         <div class="row">
             <div class="column s8 offset-s2">
                     <h4 class="center">Service and Support</h4>
