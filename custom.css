@@ -1,5 +1,8 @@
 /*testing area*/
 
+
+/*to add: color for Join modal*/
+
 /*end testing area*/
 
 /*general attributes*/
@@ -63,16 +66,16 @@ nav ul a {
 .card .card-content a:hover {
     background-color: #c6ecd3;}
 
-.tabs .tab a{
+.tabs .tab a.active {
     color: #616161;
     background-color:#eceff1;}
 
 .tabs .tab a:focus, .tabs .tab a:focus.active {
-    background-color: #44c26f;
-    color: white;
+    background-color: #eceff1;
+    color: #616161;
     outline: none;}
 
-.tabs .tab a.active {
+.tabs .tab a {
     background-color: #44c26f;
     color: white;}
 
