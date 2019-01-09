@@ -1,32 +1,6 @@
-
-//initialize sidenav
 document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    // var instances = M.Sidenav.init(elems, options);
-});
-
-//Initialize tabs
-$(document).ready(function(){
-    $('.tabs').tabs();
-});
-
-
-// scrollspy.  to add: close sidebar after click, decide if home will be scrolled or a refresh, decide if center is ideal
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     var elems = document.querySelectorAll('.scrollspy');
-//     var instances = M.ScrollSpy.init(elems, options);
-// });
-
-$(document).ready(function(){
-    $('.scrollspy').scrollSpy();
-});
-
-
-$(document).ready(function(){
-    $('select').formSelect();
-});
-
-$(document).ready(function(){
-    $('.modal').modal();
+    // var instances = M.Sidenav.init(document.querySelectorAll('.sidenav'), options);
+    M.ScrollSpy.init(document.querySelectorAll('.scrollspy'));
+    M.Modal.init(document.querySelectorAll('.modal'));
+    M.Tabs.init(document.querySelectorAll('.tabs'));
 });

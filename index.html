@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,20 +12,23 @@
     <link type="text/css" rel="stylesheet" href="custom.css">
     <!--minified JQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <title>Magnolia Road Internet Coop</title>
 </head>
-
 <body>
 
 <header>
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
-                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i
+                        class="material-icons">menu</i></a>
                 <ul class="right">
-                    <li><a href="https://www.dotster.com/secure/login.bml?showWebmailTab=1"><i class="material-icons left">account_box</i>Webmail Login</a></li>
+                    <li><a href="https://www.dotster.com/secure/login.bml?showWebmailTab=1"><i
+                            class="material-icons left">account_box</i>Webmail Login</a></li>
                 </ul>
-                <ul class="right hide-on-small-only"><span class="attention">
-                    <a class="waves-effect waves-light btn modal-trigger" href="#joinForm""><i class="material-icons left">landscape</i>Join MRIC</a></span>
+                <ul class="right hide-on-small-only attention">
+                    <a class="waves-effect waves-light btn modal-trigger" href="#joinForm"><i
+                        class="material-icons left">landscape</i>Join MRIC</a>
                 </ul>
             </div>
         </nav>
@@ -33,112 +36,105 @@
 
     <ul id="slide-out" class="sidenav">
         <!-- may change li to hide-on-med-and-down-->
-        <li><a class="waves-effect waves-teal href="index.html""><i class=" material-icons">landscape</i>Home</a></li>
-        <li><div class="divider"></div></li>
-        <li><a class="waves-effect waves-teal sidenav-close" href="#join">Join MRIC</a></li> <!-- include info: plans, service area-->
+        <li><a class="waves-effect waves-teal" href="index.html"><i class="material-icons">landscape</i>Home</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="waves-effect waves-teal sidenav-close" href="#join">Join MRIC</a></li>
+        <!-- include info: plans, service area-->
         <li><a class="waves-effect waves-teal sidenav-close" href="#network">Network Status</a></li>
         <li><a class="waves-effect waves-teal sidenav-close" href="#coop">About the Coop</a></li>
-        <li><a class="waves-effect waves-teal sidenav-close" href="#service">Service and Support</a></li>
-        <li><a class="waves-effect waves-teal sidenav-close" href="#!">Contact</a></li>
+        <li><a class="waves-effect waves-teal sidenav-close" href="#service">Support and Contact</a></li>
     </ul>
 
     <div class="parallax-container valign-wrapper">
-        <div class="parallax"><img src="img/resizeGlacierLong.jpg" style="transform: translate3d(-50%, 347.01px, 0px); opacity: 1;">
+        <div class="parallax"><img src="img/resizeGlacierLong.jpg" alt="mountain picture"
+                                   style="transform: translate3d(-50%, 347.01px, 0px); opacity: 1;">
         </div>
         <div class="section">
-            <!--<div class="row">-->
-                <!--<div class="column s6">-->
-                    <div class="card tealgrey">
-                        <div class="card-content center">
-                            <span class="card-title"> Magnolia Road Internet Cooperative</span>
-                            <i class="material-icons">landscape</i>
-                            <p>Fostering Community Through Connectivity</p>
-                        </div>
-                    </div>
-                <!--</div>-->
-            <!--</div>-->
+
+            <div class="card tealgrey">
+                <div class="card-content center">
+                    <span class="card-title"> Magnolia Road Internet Cooperative</span>
+                    <i class="material-icons">landscape</i>
+                    <p>Fostering Community Through Connectivity</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <div id="joinForm" class="modal">
         <div class="modal-content">
             <h4 class="center"><i class="material-icons">landscape</i> Join MRIC</h4>
-                <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix">account_circle</i>
-                                <input id="icon_prefix" type="text" class="validate">
-                                <label for="icon_prefix">First Name</label>
-                            </div>
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix">account_circle</i>
-                                <input id="icon_prefix" type="text" class="validate">
-                                <label for="icon_prefix">Last Name</label>
-                            </div>
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix">email</i>
-                                <input id="icon_telephone" type="tel" class="validate">
-                                <label for="icon_telephone">Email</label>
-                            </div>
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix">phone</i>
-                                <input id="icon_telephone" type="tel" class="validate">
-                                <label for="icon_telephone">Phone</label>
-                            </div>
-                            <div class="col s12">
-                                <form action="#">
-                                    <p>Perferred Contact Method</p>
-                                    <p>
-                                        <label>
-                                            <input name="group1" type="radio" checked />
-                                            <span>email</span>
-                                        </label>
-                                    </p>
-                                    <p>
-                                        <label>
-                                            <input name="group1" type="radio" />
-                                            <span>phone</span>
-                                        </label>
-                                    </p>
-                                </form>
-                            </div>
-                            <form class="col s12">
-                                <div class="input-field">
-                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                    <label for="textarea1">Comment (optional)</label>
-                                </div>
+            <div class="row">
+                <form class="col s12" action="/SUbMITform.php">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="firstName" type="text" class="validate">
+                            <label for="firstName">First Name</label>
                         </div>
-                    </form>
-                </div>
-            </form>
-            <span class="attention">
-                    <a class="waves-effect waves-light btn modal-trigger">Submit</a>
-            </span>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="lastName" type="text" class="validate">
+                            <label for="lastName">Last Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id="emailAddress" type="tel" class="validate">
+                            <label for="emailAddress">Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="telephoneNumber" type="tel" class="validate">
+                            <label for="telephoneNumber">Phone</label>
+                        </div>
+                        <div class="col s12">
+                                <p>Perferred Contact Method</p>
+                                <p>
+                                    <label>
+                                        <input name="group1" type="radio" checked/>
+                                        <span>email</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input name="group1" type="radio"/>
+                                        <span>phone</span>
+                                    </label>
+                                </p>
+                        </div>
+                        <div class="col s12">
+                            <div class="input-field">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Comment (optional)</label>
+                            </div>
+                        </div>
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+                </form>
             </div>
-        </div>
+         </div>
     </div>
+
 
 </header>
 <main>
-<!-- MRIC promotion area.-->
+    <!-- MRIC promotion area.-->
     <div class="section whiteteal">
-    <div class="row">
+        <div class="row">
             <div class="col s12 m3 l2 offset-l2">
                 <div class="icon-block">
-                        <h5 class="center"><i class='small material-icons'>satellite</i><br>Location</h5>
-                        <div class="hide-on-med-and-up center-align container">
-                            <p class="light">Provides high speed Internet to areas west of Boulder, Colorado.</p>
-                        </div>
-                        <div class="hide-on-small-only">
-                            <p class="light">Provides high speed Internet to areas west of Boulder, Colorado.</p>
-                        </div>
+                    <h5 class="center"><i class='small material-icons'>satellite</i><br>Location</h5>
+                    <div class="hide-on-med-and-up center-align container">
+                        <p class="light">Provides high speed Internet to areas west of Boulder, Colorado.</p>
+                    </div>
+                    <div class="hide-on-small-only">
+                        <p class="light">Provides high speed Internet to areas west of Boulder, Colorado.</p>
+                    </div>
                 </div>
             </div>
 
             <div class="col s12 m3 l2">
                 <div class="icon-block">
-                    <span class="white-text">
                         <h5 class="center"><i class='small material-icons'>network_check</i><br>Speed</h5>
                         <div class="hide-on-med-and-up center-align container">
                             <p class="light">Boasts the fastest wireless internet in the mountains.</p>
@@ -146,13 +142,11 @@
                         <div class="hide-on-small-only">
                             <p class="light">Boasts the fastest wireless internet in the mountains.</p>
                         </div>
-                    </span>
                 </div>
             </div>
 
             <div class="col s12 m3 l2">
                 <div class="icon-block">
-                    <span class="white-text">
                         <h5 class="center"><i class='small material-icons'>check_box</i><br>Reliability</h5>
                         <div class="hide-on-med-and-up center-align container">
                             <p class="light">Committed to investment in faster technologies and modern network architecture</p>
@@ -160,13 +154,11 @@
                         <div class="hide-on-small-only">
                             <p class="light">Committed to investment in faster technologies and modern network architecture</p>
                         </div>
-                    </span>
                 </div>
             </div>
 
             <div class="col s12 m3 l2">
                 <div class="icon-block">
-                    <span class="white-text">
                         <h5 class="center"><i class='small material-icons'>tag_faces</i><br>Community</h5>
                         <div class="hide-on-med-and-up center-align container">
                             <p class="light">Support local - Organized as a co-op, MRIC prioritizes the customer over profit</p>
@@ -174,20 +166,20 @@
                         <div class="hide-on-small-only">
                             <p class="light">Support local - Organized as a co-op, MRIC prioritizes the customer over profit</p>
                         </div>
-                    </span>
                 </div>
             </div>
         </div>
     </div>
-<!--End promotional area, start others -->
+    <!--End promotional area, start others -->
 
     <div id="join" class="section steelgrey scrollspy">
         <div class="container">
             <div class="section center">
-            <h4><i class="material-icons small">landscape</i> Join MRIC </h4>
-            <p></p>Friendly, Fast, Reliable Internet in the Mountains</p>
+                <h4><i class="material-icons small">landscape</i> Join MRIC </h4>
+                <p>Friendly, Fast, Reliable Internet in the Mountains</p>
                 <span class="attention">
-                    <a class="waves-effect waves-light btn modal-trigger" href="#joinForm"><i class="material-icons left">landscape
+                    <a class="waves-effect waves-light btn modal-trigger" href="#joinForm"><i
+                            class="material-icons left">landscape
                     </i>Join MRIC</a>
                     </span>
             </div>
@@ -195,27 +187,34 @@
             <div class="row">
                 <div class="col s12 m6">
                     <h5>Want to become a part of our internet community?</h5>
-                    <p> MRIC is structured as a Co-Op, so joining us means you get:
-                        <ul><li>voting rights</li>
+                    <p> MRIC is structured as a Co-Op, so joining us means you get:</p>
+                    <ul>
+                        <li>voting rights</li>
                         <li>to support your community</li>
-                        <li>and of course....<br>awesome internet</li></ul>
-                    </p>
+                        <li>and of course....<br>awesome internet</li>
+                    </ul>
                     <p>By awesome, we mean speeds averaging between 60-100mbps for upgraded areas</p>
                 </div>
                 <div class="col s12 m6">
-                        <h5>Coverage</h5>
-                        <p>Don't know if your area would be covered?  When in doubt ask us, and click here to see our current service area map</p>
-                        <h5>Cost</h5>
-                        <p>$60/month</p>
-                        <p>Setup fees:<ul><li>$50 one time membership fee to join the Co-Op</li>
-                        <li>If equipment is needed: $50 installation fee plus the cost of equipment (normally $100-$300)</li></ul></p>
+                    <h5>Coverage</h5>
+                    <p>Don't know if your area would be covered? When in doubt ask us, and click here to see our current
+                        service area map</p>
+                    <h5>Cost</h5>
+                    <p>$60/month</p>
+                    <p>Setup fees:</p>
+                    <ul>
+                        <li>$50 one time membership fee to join the Co-Op</li>
+                        <li>If equipment is needed: $50 installation fee plus the cost of equipment (normally
+                            $100-$300)
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="parallax-container-small">
-        <div class="parallax"><img src="img/beautiful-canyon.jpg" style="transform: translate3d(-50%); opacity: 1;">
+        <div class="parallax"><img src="img/beautiful-canyon.jpg" alt="picture of a mountain canyon">
         </div>
     </div>
 
@@ -223,25 +222,24 @@
     <div id="network" class="section whiteteal scrollspy">
         <h4 class="center">Network Status</h4>
         <div class="container">
-            <!--Placeholder-->  <!--Placeholder-->  <!--Placeholder-->
             <div class="row">
-                <div class="col s3">
-                    <p>outages: none! , or awesomesauce.</p>
-                    <p>There are currently lots of connections, in these areas</p>
-                    <p>Maybe there should be a map of the network here</p>
+                <div class="col s3" id="radioInfo">
+                        <p>outages: none! , or awesomesauce.</p>
+                        <p>There are currently lots of connections, in these areas</p>
+                        <p>Maybe there should be a map of the network here</p>
                 </div>
                 <div class="col s8 offset-s1">
-                    <div class="section">
+                    <div id="radioDetails" class="section">
                         <div class="chip">
-                            <i id="networkicon" class="material-icons green tiny">check</i>
+                            <i class="material-icons green tiny">check</i>
                             Cool Chimp: check, check circle
                         </div>
                         <div class="chip">
-                            <i id="networkicon" class="material-icons red tiny">close</i>
+                            <i class="material-icons red tiny">close</i>
                             Bad Wolf Mountain: close, cancel
                         </div>
                         <div class="chip">
-                            <i id="networkicon" class="material-icons yellow circle tiny">error</i>
+                            <i class="material-icons yellow circle tiny">error</i>
                             Turtle Island: error, flag
                         </div>
                     </div>
@@ -254,50 +252,54 @@
     <div id="coop" class="section steelgrey scrollspy">
         <div class="container">
             <div class="section">
-                        <h4 class="center">Coop Information</h4>
+                <h4 class="center">Coop Information</h4>
             </div>
 
             <div class="row">
-             <div class="col s12 m5">
+                <div class="col s12 m5">
                     <p>MRIC was founded in DATE by a small group of people who wanted internet in their mountain homes.
-                        Since then it has grown to serve nearly 400 people and to cover areas including Sugarloaf, Magnolia, Coal Creek Canyon, Blue Mountain Estates, Nederland's Ridge Road, and Boulder's Lakeshore neighborhoods.
-                    </p>
-                        <div class="section center attention">
-                            <a class="waves-effect waves-light attention btn"><i class="material-icons left">location_on</i>See our service area</a>
-                        </div>
-                    </p>
-             </div>
-
-            <div class="col s12 m7">
-                <div class="card">
-                    <div class="card-tabs">
-                        <ul class="tabs tabs-fixed-width">
-                            <li class="tab"><a class="active" href="#documents">Coop Documents</a></li>
-                            <li class="tab"><a href="#Board">Board of Directors</a></li>
-                        </ul>
+                        Since then it has grown to serve nearly 400 people and to cover areas including Sugarloaf,
+                        Magnolia, Coal Creek Canyon, Blue Mountain Estates, Nederland's Ridge Road, and Boulder's
+                        Lakeshore neighborhoods.
+                    <div class="section center attention">
+                        <a class="waves-effect waves-light attention btn"><i class="material-icons left">location_on</i>See
+                            our service area</a>
                     </div>
-                    <div class="card-content center">
-                        <div id="documents">
-                            <ul>
-                                <li><a target="_blank" href='./Bylaws.pdf'>MRIC Bylaws</a></li>
-                                <li><a target="_blank" href='./DirectorsVoteSep2018.pdf'>Vote for Directors Sep 2018</a></li>
-                                <li><a target="_blank" href='./MinutesJul2018.pdf'>Annual Meeting Minutes Jul 2018</a></li>
-                                <li><a target="_blank" href='./CoopVoteJul2018.pdf'>Vote to Continue as a Coop Jul 2018</a></li>
+                </div>
+
+                <div class="col s12 m7">
+                    <div class="card">
+                        <div class="card-tabs">
+                            <ul class="tabs tabs-fixed-width">
+                                <li class="tab"><a class="active" href="#documents">Coop Documents</a></li>
+                                <li class="tab"><a href="#Board">Board of Directors</a></li>
                             </ul>
                         </div>
-                        <div id="Board">
-                            <ul>
-                                <li>Allen Dove</li>
-                                <li>Allen Gordon</li>
-                                <li>Howard Kaushansky</li>
-                                <li>Mark Woodworth</li>
-                                <li>Nick Wilson</li>
-                                <li>Paul Ganci</li>
-                            </ul>
+                        <div class="card-content center">
+                            <div id="documents">
+                                <ul>
+                                    <li><a target="_blank" href='./Bylaws.pdf'>MRIC Bylaws</a></li>
+                                    <li><a target="_blank" href='./DirectorsVoteSep2018.pdf'>Vote for Directors Sep
+                                        2018</a></li>
+                                    <li><a target="_blank" href='./MinutesJul2018.pdf'>Annual Meeting Minutes Jul
+                                        2018</a></li>
+                                    <li><a target="_blank" href='./CoopVoteJul2018.pdf'>Vote to Continue as a Coop Jul
+                                        2018</a></li>
+                                </ul>
+                            </div>
+                            <div id="Board">
+                                <ul>
+                                    <li>Allen Dove</li>
+                                    <li>Allen Gordon</li>
+                                    <li>Howard Kaushansky</li>
+                                    <li>Mark Woodworth</li>
+                                    <li>Nick Wilson</li>
+                                    <li>Paul Ganci</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     </div>
@@ -306,14 +308,14 @@
     <div id="service" class="section whiteteal scrollspy">
         <div class="row">
             <div class="column s10 offset-s2">
-                    <h5 class="center">Service, Support, and contact</h5>
+                <h5 class="center">Service, Support, and Contact</h5>
             </div>
         </div>
         <div class="row">
             <div class="col s10 offset-s2">
-                <p><i class="material-icons">email</i>  help@MRIC.net</p>
+                <p><i class="material-icons">email</i> help@MRIC.net</p>
                 <p><i class="material-icons">local_phone</i>(720) 210-1969</p>
-                <p><i class="material-icons">phonelink_erase</i>  Report an outage: help@MRIC.net</p>
+                <p><i class="material-icons">phonelink_erase</i> Report an outage: help@MRIC.net</p>
 
             </div>
         </div>
@@ -337,6 +339,5 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
 <script type="text/javascript" src="https://materializecss.com/templates/parallax-template/js/init.js"></script>
 <script type="text/javascript" src="custom.js"></script>
-
 </body>
 </html>
