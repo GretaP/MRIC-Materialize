@@ -48,6 +48,11 @@ nav ul a {
     background-color: #eceff1;
     color: teal;}
 
+.whitegrey {
+    background-color: white;
+    color: #616161;
+}
+
 .whiteteal {
     background-color: #009688;
     color: white;}
@@ -68,10 +73,10 @@ nav ul a {
 
 .tabs .tab a.active {
     color: #616161;
-    background-color:#eceff1;}
+    background-color: white;}
 
 .tabs .tab a:focus, .tabs .tab a:focus.active {
-    background-color: #eceff1;
+    background-color: white;
     color: #616161;
     outline: none;}
 

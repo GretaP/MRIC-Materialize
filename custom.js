@@ -5,3 +5,5 @@ document.addEventListener('DOMContentLoaded', function() {
     M.Tabs.init(document.querySelectorAll('.tabs'));
     M.Parallax.init(document.querySelectorAll('.parallax'));
 });
+
+

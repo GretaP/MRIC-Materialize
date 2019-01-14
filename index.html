@@ -7,7 +7,6 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link type="text/css" rel="stylesheet" href="custom.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <title>Magnolia Road Internet Coop</title>
 </head>
 <body>
@@ -20,8 +19,8 @@
                 <ul class="right">
                     <li><a href="https://www.dotster.com/secure/login.bml?showWebmailTab=1"><i class="material-icons left">account_box</i>Webmail Login</a></li>
                 </ul>
-                <ul class="right hide-on-small-only attention">
-                    <li><a class="waves-effect waves-light btn modal-trigger" href="#joinForm"><i class="material-icons left">landscape</i>Join MRIC</a></li>
+                <ul class="right attention">
+                    <li><a class="waves-effect waves-light hide-on-small-only btn modal-trigger" href="#joinForm"><i class="material-icons left">landscape</i>Join MRIC</a></li>
                 </ul>
             </div>
         </nav>
@@ -50,7 +49,7 @@
     </div>
 
     <div id="joinForm" class="modal">
-        <div class="modal-content">
+        <div class="modal-content whitegrey">
             <h4 class="center"><i class="material-icons">landscape</i> Join MRIC</h4>
             <div class="row">
                 <form class="col s12" action="/joinForm.php">
@@ -75,7 +74,7 @@
                             <label for="telephoneNumber">Phone</label>
                         </div>
                         <div class="col s12">
-                                <p>Perferred Contact Method</p>
+                                <p>Preferred Contact Method</p>
                                 <p>
                                     <label>
                                         <input name="group1" type="radio" checked/>
@@ -102,6 +101,17 @@
             </div>
          </div>
     </div>
+
+
+    <div id="serviceAreaModal" class="modal">
+        <div class="modal-content whitegrey center">
+            <h4>Upcoming Feature</h4>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
 </header>
 
 
@@ -239,27 +249,48 @@
 
     <div id="network" class="section whiteteal scrollspy">
         <h4 class="center">Network Status</h4>
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col s3" id="radioInfo">-->
+                        <!--<p>Outages: none</p>-->
+                        <!--<p>There are currently lots of connections, in these areas</p>-->
+                <!--</div>-->
+                <!--<div class="col s8 offset-s1">-->
+                    <!--<div id="radioDetails" class="section">-->
+                        <!--<div class="chip">-->
+                            <!--<i class="material-icons green tiny">check</i>-->
+                            <!--Cool Chimp: check, check circle-->
+                        <!--</div>-->
+                        <!--<div class="chip">-->
+                            <!--<i class="material-icons red tiny">close</i>-->
+                            <!--Bad Wolf Mountain: close, cancel-->
+                        <!--</div>-->
+                        <!--<div class="chip">-->
+                            <!--<i class="material-icons yellow circle tiny">error</i>-->
+                            <!--Turtle Island: error, flag-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
         <div class="container">
             <div class="row">
-                <div class="col s3" id="radioInfo">
-                        <p>Outages: none</p>
-                        <p>There are currently lots of connections, in these areas</p>
-                </div>
-                <div class="col s8 offset-s1">
+                <div class="col s12 center">
                     <div id="radioDetails" class="section">
                         <div class="chip">
                             <i class="material-icons green tiny">check</i>
-                            Cool Chimp: check, check circle
+                            There are no outages
                         </div>
                         <div class="chip">
                             <i class="material-icons red tiny">close</i>
-                            Bad Wolf Mountain: close, cancel
+                            Bad Wolf Mountain: down
                         </div>
                         <div class="chip">
                             <i class="material-icons yellow circle tiny">error</i>
-                            Turtle Island: error, flag
+                            Sloth Mountain: slow network detected
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -279,13 +310,13 @@
                         Magnolia, Coal Creek Canyon, Blue Mountain Estates, Nederland's Ridge Road, and Boulder's
                         Lakeshore neighborhoods.
                     <div class="section center attention">
-                        <a class="waves-effect waves-light attention btn"><i class="material-icons left">location_on</i>See
+                        <a class="waves-effect waves-light attention btn modal-trigger" href="#serviceAreaModal"><i class="material-icons left">location_on</i>See
                             our service area</a>
                     </div>
                 </div>
 
                 <div class="col s12 m7">
-                    <div class="card">
+                    <div class="card white">
                         <div class="card-tabs">
                             <ul class="tabs tabs-fixed-width">
                                 <li class="tab"><a class="active" href="#documents">Coop Documents</a></li>
@@ -353,7 +384,7 @@
     </div>
 </footer>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+<script type="text/javascript" src="materialize.js"></script>
 <script type="text/javascript" src="custom.js"></script>
 </body>
 </html>
