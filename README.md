@@ -1,4 +1,4 @@
-# MaterializeWeb
+# MRIC-Materialize
 
 Modern site with the Materialize framework for the MRIC Co-op, Will support real-time network status tracking and issue reporting.
 
